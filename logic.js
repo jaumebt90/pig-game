@@ -52,15 +52,6 @@ const winnerClass = function () {
     .classList.remove("player--active");
 };
 
-const resetClass = function () {
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.remove("player--winner");
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.add("player--active");
-};
-
 // Rolling dice functionality
 btnRoll.addEventListener("click", function () {
   if (playing) {
